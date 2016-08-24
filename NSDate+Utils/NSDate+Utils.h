@@ -1,12 +1,15 @@
-# NHFDateUtils
-<h2>介绍</h2>
-<p>有关所以日期时间的操作以及各种转换功能</p>
-<h2>安装</h2>
-<ul>
-<li>pod 'NHFFileUtils'</li>
-<li>手动下载然后将文件夹拖至工程中即可</li>
-</ul>
-<h2>使用方法</h2>
+//
+//  NSDate+Utils.h
+//  BloodSugar
+//
+//  Created by PeterPan on 13-12-27.
+//  Copyright (c) 2013年 shake. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+@interface NSDate (Utils)
 
 + (NSDate *)dateWithYear:(NSInteger)year
                    month:(NSInteger)month
@@ -99,3 +102,9 @@
 + (NSDate*) fromUnixLong:(long long)unixtime;
 + (NSString *)dateFormatHHmm;
 - (NSString *)stringYearMonthDayCompareTodayWithDateFormats:(NSString*)dateFormat;
+
+@end
+
+
+
+
